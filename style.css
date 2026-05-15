@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #020202;
+    height: 100vh;
+    width: 100vw;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 1;
+}
+
+#ui-container {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+#song-title {
+    font-size: 1rem;
+    letter-spacing: 6px;
+    margin-bottom: 25px;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: opacity 1s ease;
+}
+
+#upload {
+    display: none;
+}
+
+.custom-upload {
+    pointer-events: auto;
+    padding: 14px 35px;
+    background: rgba(255, 0, 255, 0.05);
+    border: 1px solid #ff00ff;
+    color: #ff00ff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-upload:hover {
+    background: #ff00ff;
+    color: #000;
+    box-shadow: 0 0 30px rgba(255, 0, 255, 0.6);
+}
