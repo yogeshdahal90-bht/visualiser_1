@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3js Visualizer - Cymatic Ring Engine</title>
+    <link rel="stylesheet" href="./style.css">
+    
+    <!-- The Import Map configures the module resolver for Three.js -->
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@0.136.0/build/three.module.js"
+          }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- UI Overlay for Track Upload and Title Data -->
+    <div id="ui-container">
+        <h1 id="song-title">CYMATIC RESONANCE ENGINE</h1>
+        
+        <!-- Custom styled label serving as our clickable upload button -->
+        <label for="upload" class="custom-upload">UPLOAD TRACK</label>
+        <input type="file" id="upload" accept="audio/*">
+    </div>
+
+    <!-- Main Logic Script Loader -->
+    <script type="module" src="./script.js"></script>
+
+</body>
+</html>
